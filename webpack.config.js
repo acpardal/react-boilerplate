@@ -1,11 +1,11 @@
-var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
-  context: __dirname + "/src",
-	entry: "./main.jsx",
+	entry: path.resolve(__dirname, "src/main.jsx"),
 	output: {
-		path: __dirname + "/dist",
-		filename: "bundle.js"
+		path: path.resolve(__dirname, "dist"),
+		filename: "bundle.js",
+    publicPath: "/dist"
 	},
   module: {
     preLoaders: [
