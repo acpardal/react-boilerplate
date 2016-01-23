@@ -1,6 +1,7 @@
 var path = require('path');
 
 module.exports = {
+	devtool: "inline-source-map",
 	entry: path.resolve(__dirname, "src/main.jsx"),
 	output: {
 		path: path.resolve(__dirname, "dist"),
